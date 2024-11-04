@@ -1,0 +1,31 @@
+sudo ufw status
+uname -v
+
+getent group sudo
+	     user42
+
+sudo adduser <name>
+sudo addgroup <name>
+sudo adduser <username> <group_name>
+
+hostname # -I pour wordpress
+hostnamectl set-hostname <name>
+
+lsblk
+dpkg -s sudo
+
+nano /etc/sudoers.d/sudo_config
+cd /var/log/sudo/ | cat sudo_config
+
+sudo service ufw status
+sudo ufw status numbered
+sudo ufw allow <port_number>
+sudo ufw delete <rule_number>
+
+sudo service ssh status
+
+sudo crontab -u root -e
+sudo service cron status
+
+check days : nano /etc/login.defs
+check password policy : nano /etc/pam.d/common-password
